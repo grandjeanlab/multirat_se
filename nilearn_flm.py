@@ -1,6 +1,7 @@
 #Python Nilearn Firsl Level Model 
+#Within MultiRatStim conda environment
 
-"conda activate MultiRatStim" #Activates only if I run it directly from the terminal but not from runing the script (can't find why)
+#Imports
 import pandas as pd
 import numpy as np 
 import nibabel as nib
@@ -10,6 +11,8 @@ from nilearn import plotting, image
 from nilearn.glm.first_level import compute_regressor
 from nilearn.glm.first_level import make_first_level_design_matrix
 from nilearn.glm.first_level import FirstLevelModel
+from nilearn.plotting import plot_design_matrix
+
 
 #Init variables
 init_folder='/home/traaffneu/margal/code/multirat_se'
@@ -21,54 +24,59 @@ template_path ='/project/4180000.19/multirat_stim/rabies_test/preprocess/unbiase
 rat_subj = 200200
 
 # ------------------------------------- Events file - data frame -------------------------------------
-
-metadata = pd.read_csv('/home/traaffneu/margal/Downloads/MultiRat_SE_metadata - multiRat_stim.tsv', sep='\t', header=0, index_col=3)
-    # path might be changed 
+metadata = pd.read_csv('/project/4180000.19/multirat_stim/MultiRat_SE_metadata - multiRat_stim.tsv', sep='\t', header=0, index_col=3)
+  # path might be changed 
     # sep='\t' -> because format .tsv has tab separar
     # header=0 -> because the first row contains the name of the columns
     # index_col=5 -> because the column 5 contains the ID of the rats
-    #print(metadata.columns)
+    
+onset = np.matrix(metadata.loc[rat_subj,'func.sensory.onset']).A[0]
+duration = np.matrix(metadata.loc[rat_subj,'func.sensory.duration']).A[0]
+events = pd.DataFrame({'onset': onset,'duration': duration})
 
-events = pd.DataFrame()
-events = metadata.loc[:,['func.sensory.onset','func.sensory.duration']] #events for all animals
-events = events.loc[rat_subj, :] #events for one animal
+print(events)
+print('onset: ', onset)
+print('duration: ', duration)
 
-onset = events[['func.sensory.onset']] #define onset values
-duration = events[['func.sensory.duration']] #define duration values
+# ------------------------------------- Design matrix -------------------------------------
 
-events['onset'] = list(map(float, onset.split(','))) #try to turn the objects into floats, UNSUCCESFULLY rrrrrr
-events['duration'] = list(map(float, duration.split(',')))
+#Get TR
+func_img = nib.load(subject_path)
+header = func_img.header
+    #print(header) #print all parameters
+    #print(image.load_img(subject_path).shape) #print dimensions, number of slices, number of volumes 
 
-print(onset)
-print(duration)
+tr = 1.0
+n_scans = 325 #nb volumes
+frame_times = np.arange(n_scans) * tr  # corresponding frame times
+amplitude = np.array([1, 1, 1, 1, 1, 1], dtype=object) #6 events
+exp_condition = np.array((onset, duration, amplitude), dtype=object)
+hrf_model = 'spm'
 
+#Compute regressors 
+signal, name = nilearn.glm.first_level.compute_regressor(exp_condition, hrf_model, frame_times)
 
-# # -- Convert events of the rat to NumPy arrays --    
-# onset = events[['func.sensory.onset']].to_numpy() 
-# duration = events[['func.sensory.duration']].to_numpy() 
+#Compute design matrix
+design_matrices = make_first_level_design_matrix(frame_times, events, drift_model='polynomial', drift_order=3, hrf_model=hrf_model)
+design = make_first_level_design_matrix(
+    frame_times, events, drift_model='polynomial', drift_order=3, hrf_model=hrf_model)
 
-# print("Onset values", onset)
-# print("Duration values", duration)
+print(design)
+plot_design_matrix(design)
 
-# # # ------------------------------------- Define parameters for design matrix -------------------------------------
+#------------------------------------- Fitting a first-level model -------------------------------------
 
-# #Get TR
-# func_img = nib.load(subject_path)
-# header = func_img.header
-#     #print(header) #print all parameters
-#     #print(image.load_img(subject_path).shape) #print dimensions, number of slices, number of volumes 
+fmri_glm = FirstLevelModel()
+fmri_glm = fmri_glm.fit(subject_path, design_matrices=design)
 
-# tr = 1.0
-# n_scans = 325 #nb volumes
-# frame_times = np.arange(n_scans) * tr  # corresponding frame times
-# amplitude = np.array([1, 1, 1, 1, 1, 1], dtype=float) #6 events
-# exp_condition = np.array((onset, duration, amplitude), dtype=float)
-# hrf_model = 'spm'
+#Compute contrasts 
+n_columns = design.shape[1]
+contrast_val = np.hstack(([1], np.zeros(n_columns - 1)))
+print('Contrasts: ', contrast_val)
 
-# #Compute regressors 
-# signal, name = nilearn.glm.first_level.compute_regressor(exp_condition, hrf_model, frame_times)
+summary_statistics= fmri_glm.compute_contrast(contrast_val, output_type='all')
 
-
+plotting.plot_stat_map(summary_statistics['z_score'], bg_img = template_path, threshold = 1.9, title = 'My first contrast')
 
 
 
