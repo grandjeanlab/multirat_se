@@ -15,7 +15,6 @@ module unload ANTs
 module unload freesurfer
 module unload fsl 
 
-
 #Provide path to templates and masks. 
 template=/groupshare/traaffneu/preclinimg/templates/SIGMA_Wistar_Rat_Brain_TemplatesAndAtlases_Version1.1/SIGMA_Rat_Anatomical_Imaging/SIGMA_Rat_Anatomical_InVivo_Template/SIGMA_InVivo_Brain_Template.nii
 mask=/groupshare/traaffneu/preclinimg/template/SIGMA_Rat_Anatomical_Imaging/SIGMA_Rat_Anatomical_InVivo_Template/SIGMA_InVivo_Brain_Mask.nii
@@ -55,4 +54,3 @@ singularity run -B ${template_folder}:/template -B ${bids_folder}:/rabies_in:ro 
 --commonspace_reg='masking'='false','brain_extraction'='false','template_registration'='SyN','fast_commonspace'='true' \
 --commonspace_resampling 0.3x0.3x0.3 \
 --anat_autobox \
-
