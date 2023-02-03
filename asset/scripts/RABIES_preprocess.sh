@@ -15,19 +15,21 @@ module unload ANTs
 module unload freesurfer
 module unload fsl 
 
+cd /project/4180000.19/multirat_stim/rabies_test/
+
 #Provide path to templates and masks. 
-template=/groupshare/traaffneu/preclinimg/templates/SIGMA_Wistar_Rat_Brain_TemplatesAndAtlases_Version1.1/SIGMA_Rat_Anatomical_Imaging/SIGMA_Rat_Anatomical_InVivo_Template/SIGMA_InVivo_Brain_Template.nii
-mask=/groupshare/traaffneu/preclinimg/template/SIGMA_Rat_Anatomical_Imaging/SIGMA_Rat_Anatomical_InVivo_Template/SIGMA_InVivo_Brain_Mask.nii
-wm=/groupshare/traaffneu/preclinimg/template/SIGMA_Rat_Anatomical_Imaging/SIGMA_Rat_Anatomical_InVivo_Template/SIGMA_InVivo_WM_bin.nii.gz
-csf=/groupshare/traaffneu/preclinimg/template/SIGMA_Rat_Anatomical_Imaging/SIGMA_Rat_Anatomical_InVivo_Template/SIGMA_InVivo_CSF_bin.nii.gz
-atlas=/groupshare/traaffneu/preclinimg/template/SIGMA_Rat_Brain_Atlases/SIGMA_Anatomical_Atlas/SIGMA_Anatomical_Brain_Atlas_rs.nii
+template=/template/SIGMA_Rat_Anatomical_Imaging/SIGMA_Rat_Anatomical_InVivo_Template/SIGMA_InVivo_Brain_Template.nii
+mask=/template/SIGMA_Rat_Anatomical_Imaging/SIGMA_Rat_Anatomical_InVivo_Template/SIGMA_InVivo_Brain_Mask.nii
+wm=/template/SIGMA_Rat_Anatomical_Imaging/SIGMA_Rat_Anatomical_InVivo_Template/SIGMA_InVivo_WM_bin.nii.gz
+csf=/template/SIGMA_Rat_Anatomical_Imaging/SIGMA_Rat_Anatomical_InVivo_Template/SIGMA_InVivo_CSF_bin.nii.gz 
+atlas=/template/SIGMA_Rat_Brain_Atlases/SIGMA_Anatomical_Atlas/SIGMA_Anatomical_Brain_Atlas_rs.nii
 roi=/groupshare/traaffneu/preclinimg/template/roi/
 
 #Define input/output folders for subject sub-0101000 ses-1
 subj_number=$1
 TR=$2 
 orig_folder=/project/4180000.19/multirat_stim/rabies_test/bids/sub-${subj_number}/ses
-template_folder=/groupshare/traaffneu/preclinimg/templates
+template_folder=/groupshare/traaffneu/preclinimg/templates/SIGMA_Wistar_Rat_Brain_TemplatesAndAtlases_Version1.1
 bids_folder=/project/4180000.19/multirat_stim/rabies_test/bids/bids_test/sub-${subj_number}_ses-1
 preprocess_folder=/project/4180000.19/multirat_stim/rabies_test/preprocess/sub-${subj_number}_ses-1
 
