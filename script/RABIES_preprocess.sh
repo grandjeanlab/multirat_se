@@ -2,7 +2,7 @@
 
 # ----------------- Run script -----------------
 # qsub -l 'procs=1,mem=32gb,walltime=48:00:00' -I
-# cd /home/traaffneu/margal/code/multirat_se/scripts/
+# cd /home/traaffneu/margal/code/multirat_se/script/
 # ./RABIES_preprocess.sh 0200100 2
 #   when typing command to run script, give inputs:
 #       1. subject number of the rat e.g. 0200100
