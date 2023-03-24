@@ -26,7 +26,7 @@ atlas=/template/SIGMA_Rat_Brain_Atlases/SIGMA_Anatomical_Atlas/SIGMA_Anatomical_
 roi=/groupshare/traaffneu/preclinimg/template/roi/
 
 #Define input/output folders for subject sub-020XXXX ses-1
-subj_number=$1
+subj_number=0$1
 TR=$2
 correction_arg=$3
 

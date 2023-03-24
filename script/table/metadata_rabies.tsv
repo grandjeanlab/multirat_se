@@ -5,7 +5,7 @@ exclude	exclude.reason	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	rabies_cor
 		1	0200103	1	2	1	
 		1	0200104	1	2	1	
 		1	0200105	1	2	1	
-		1	0200106	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	not sure about the epi2anat	1	0200106	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
 		1	0200107	1	2	1	
 		1	0200108	1	2	1	
 		1	0200109	1	2	1	
@@ -20,13 +20,13 @@ exclude	exclude.reason	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	rabies_cor
 		2	0200208	1	1.5	1	
 		2	0200300	1	1	1	
 		3	0200301	1	1	1	
-		3	0200302	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
-		3	0200303	1	1	0	
+		3	0200302	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+	fail to complete prepro	3	0200303	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
 		3	0200304	1	1	1	
 		3	0200305	1	1	1	
 		3	0200306	1	1	1	
-	anat2template	3	0200307	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
-		3	0200308	1	1	0	
+	anat2template	3	0200307	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+		3	0200308	1	1	1	
 	anat2template	3	0200309	1	1	0	
 	template2std	4	0200400	1	1	0	
 	template2std	4	0200401	1	1	0	
