@@ -2,7 +2,7 @@
 #qsub -l 'procs=1,mem=24gb,walltime=48:00:00' -I
 
 #conda activate MultiRatStim
-#cd /home/traaffneu/margal/code/multirat_se/scripts/
+#cd /home/traaffneu/margal/code/multirat_se/script/
 # ./nordic_matlab.sh
 
 module load matlab
@@ -14,7 +14,12 @@ root_dir='/project/4180000.19/multirat_stim/nordic_test';                      #
 anat_list=splitlines(ls(fullfile(root_dir,'/bids/*/*/anat/*.nii.gz')));        #lists all of the NIfTI files in /anat/ of each subdirectory /*/*/ within the BIDS directory. Splits the output of ls into a cell array of strings
 anat_list(end)=[];                                                             #removes the last element
 func_list=splitlines(ls(fullfile(root_dir,'/bids/*/*/func/*.nii.gz')));
-func_list(end)=[];                                                             
+func_list(end)=[];  
+
+# %set kernal size, default [14 14 1]
+# ARG.kernel_size_gfactor=[8 8 1];
+# ARG.magnitude_only=1;
+# Et ARG quand t’appelles la fonctione Nordic
 
 for i = 1:length(anat_list)
 [fpath, bpath] = fileparts(anat_list{i});                      #split the path of the current element in anat_list into: path (fpath), filename (bpath)
