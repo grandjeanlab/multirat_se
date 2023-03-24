@@ -22,7 +22,7 @@ df = df.loc[(df['exclude'] != 'yes')]
 
 def queue_process(cmd):
     p1 = subprocess.Popen(["echo", f"${{PWD}}/{cmd}"], stdout=subprocess.PIPE)
-    subprocess.call(["qsub", "-N", 's001', "-l", 'nodes=1:ppn=1,mem=128mb,walltime=00:10:00'], stdin=p1.stdout)        #subprocess.call(["./RABIES_preprocess.sh", subj_num, TR, correction_arg], shell=False) #run RABIES_preprocess, giving additional inputs: correction_args, specified in metadat_rabies, submit job to qsub
+    subprocess.call(["qsub", "-N", 's001', "-l", 'nodes=1:ppn=1,mem=12gb,walltime=8:00:00'], stdin=p1.stdout)        #subprocess.call(["./RABIES_preprocess.sh", subj_num, TR, correction_arg], shell=False) #run RABIES_preprocess, giving additional inputs: correction_args, specified in metadat_rabies, submit job to qsub
 
 
 # --- Preprocess all datasets with RABIES --- 
