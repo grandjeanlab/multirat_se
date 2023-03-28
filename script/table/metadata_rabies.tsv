@@ -5,7 +5,7 @@ exclude	exclude.reason	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	rabies_cor
 		1	0200103	1	2	1	
 		1	0200104	1	2	1	
 		1	0200105	1	2	1	
-	not sure about the epi2anat	1	0200106	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+	not sure about the epi2anat	1	0200106	1	2	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
 		1	0200107	1	2	1	
 		1	0200108	1	2	1	
 		1	0200109	1	2	1	
@@ -20,146 +20,146 @@ exclude	exclude.reason	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	rabies_cor
 		2	0200208	1	1.5	1	
 		2	0200300	1	1	1	
 		3	0200301	1	1	1	
-		3	0200302	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
-	fail to complete prepro	3	0200303	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		3	0200302	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+	anat mask failed	3	0200303	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
 		3	0200304	1	1	1	
 		3	0200305	1	1	1	
 		3	0200306	1	1	1	
-	anat2template	3	0200307	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
-		3	0200308	1	1	1	
-	anat2template	3	0200309	1	1	0	
-	template2std	4	0200400	1	1	0	
-	template2std	4	0200401	1	1	0	
-	template2std	4	0200402	1	1	0	
-	template2std	4	0200403	1	1	0	
-	template2std	4	0200404	1	1	0	
-	template2std	4	0200405	1	1	0	
-	template2std	4	0200406	1	1	0	
-	template2std	4	0200407	1	1	0	
-	template2std	4	0200408	1	1	0	
-	template2std	4	0200409	1	1	0	
-		5	0200500	1	1	0	
-	epi2anat	5	0200501	1	1	0	
-	epi2anat	5	0200502	1	1	0	
-		5	0200503	1	1	0	
-		5	0200504	1	1	0	
-		5	0200505	1	1	0	
-		5	0200506	1	1	0	
-		5	0200507	1	1	0	
-	epi2anat	5	0200508	1	1	0	
-	epi2anat	5	0200509	1	1	0	
-	epi2anat	6	0200600	1	1.5	0	
-	epi2anat	6	0200601	1	1.5	0	
-		6	0200602	1	1.5	0	
-	epi2anat	6	0200603	1	1.5	0	
-		6	0200604	1	1.5	0	
-		6	0200605	1	1.5	0	
-		6	0200606	1	1.5	0	
-		6	0200607	1	1.5	0	
-	epi2anat	6	0200608	1	1.5	0	
-	epi2anat	6	0200609	1	1.5	0	
-		7	0200700	1	2	0	
-	inconsistant FOV	7	0200701	1	2	0	
-	inconsistant FOV	7	0200702	1	2	0	
-	inconsistant FOV	7	0200703	1	2	0	
-		7	0200704	1	2	0	
-		7	0200705	1	2	0	
-		7	0200706	1	2	0	
-		7	0200707	1	2	0	
-		8	0200800	1	2	0	
-		8	0200801	1	2	0	
-		8	0200802	1	2	0	
-		8	0200803	1	2	0	
-	epi2anat	8	0200804	1	2	0	
-		8	0200805	1	2	0	
-		8	0200806	1	2	0	
-		8	0200807	1	2	0	
-	anat2template	8	0200808	1	2	0	
-	epi2anat	9	0200900	1	1	0	
-		9	0200901	1	1	0	
-		9	0200902	1	1	0	
-		9	0200903	1	1	0	
-		9	0200904	1	1	0	
-		9	0200905	1	1	0	
-		9	0200906	1	1	0	
-		9	0200907	1	1	0	
-		9	0200908	1	1	0	
-		9	0200909	1	1	0	
-		11	0201100	1	1.5	0	
-		11	0201101	1	1.5	0	
-		11	0201102	1	1.5	0	
-		11	0201103	1	1.5	0	
-		11	0201104	1	1.5	0	
-		11	0201105	1	1.5	0	
-		11	0201106	1	1.5	0	
-		11	0201107	1	1.5	0	
-		11	0201108	1	1.5	0	
-		11	0201109	1	1.5	0	
-		12	0201200	1	1	0	
-		12	0201201	1	1	0	
-		12	0201202	1	1	0	
-		12	0201203	1	1	0	
-		12	0201204	1	1	0	
-		12	0201205	1	1	0	
-		12	0201206	1	1	0	
-		12	0201207	1	1	0	
-		12	0201208	1	1	0	
-		13	0201300	1	3	0	
-		13	0201301	1	3	0	
-		13	0201302	1	3	0	
-		13	0201303	1	3	0	
-		13	0201304	1	3	0	
-		13	0201305	1	3	0	
-		13	0201306	1	3	0	
-		13	0201307	1	3	0	
-		13	0201308	1	3	0	
-		13	0201309	1	3	0	
-		14	0201400	1	4	0	
-		14	0201401	1	4	0	
-		14	0201402	1	4	0	
-		14	0201403	1	4	0	
-		14	0201404	1	4	0	
-		14	0201405	1	4	0	
-		14	0201406	1	4	0	
-		14	0201407	1	4	0	
-		14	0201408	1	4	0	
-		14	0201409	1	4	0	
-		15	0201500	1	2	0	
-		15	0201501	1	2	0	
-		15	0201502	1	2	0	
-		15	0201503	1	2	0	
-		15	0201504	1	2	0	
-		15	0201505	1	2	0	
-		15	0201506	1	2	0	
-		15	0201507	1	2	0	
-		15	0201508	1	2	0	
-		15	0201509	1	2	0	
-		16	0201600	1	1	0	
-		16	0201601	1	1	0	
-		16	0201602	1	1	0	
-		16	0201603	1	1	0	
-		16	0201604	1	1	0	
-		16	0201605	1	1	0	
-		16	0201606	1	1	0	
-		16	0201607	1	1	0	
-		16	0201608	1	1	0	
-		16	0201609	1	1	0	
-		16	0201610	1	1	0	
-		16	0201611	1	1	0	
-		16	0201612	1	1	0	
-		17	0201700	2	1	0	
-		17	0201701	2	1	0	
-		17	0201702	2	1	0	
-		17	0201703	2	1	0	
-		17	0201704	2	1	0	
-		17	0201705	2	1	0	
-		17	0201706	2	1	0	
-		17	0201707	2	1	0	
-		17	0201708	2	1	0	
-		17	0201709	2	1	0	
-		17	0201710	2	1	0	
-		17	0201711	2	1	0	
-		17	0201712	2	1	0	
+	anat2template	3	0200307	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+		3	0200308	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	anat2template	3	0200309	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	template2std	4	0200400	1	1	1	
+	template2std	4	0200401	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	template2std	4	0200402	1	1	1	
+	template2std	4	0200403	1	1	1	
+	template2std	4	0200404	1	1	1	
+	template2std	4	0200405	1	1	1	
+	template2std	4	0200406	1	1	1	
+	template2std	4	0200407	1	1	1	
+	template2std	4	0200408	1	1	1	
+	template2std	4	0200409	1	1	1	
+		5	0200500	1	1	1	
+	epi2anat	5	0200501	1	1	1	
+	epi2anat	5	0200502	1	1	1	
+		5	0200503	1	1	1	
+		5	0200504	1	1	1	
+		5	0200505	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		5	0200506	1	1	1	
+		5	0200507	1	1	1	
+	epi2anat	5	0200508	1	1	1	
+	epi2anat	5	0200509	1	1	1	
+	epi2anat	6	0200600	1	1.5	1	
+	epi2anat	6	0200601	1	1.5	1	
+		6	0200602	1	1.5	1	
+	epi2anat	6	0200603	1	1.5	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		6	0200604	1	1.5	1	
+		6	0200605	1	1.5	1	
+		6	0200606	1	1.5	1	
+		6	0200607	1	1.5	1	
+	epi2anat / miss part of brain	6	0200608	1	1.5	1	
+	epi2anat	6	0200609	1	1.5	1	
+		7	0200700	1	2	2	
+	inconsistant FOV	7	0200701	1	2	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	inconsistant FOV	7	0200702	1	2	1	
+	inconsistant FOV	7	0200703	1	2	1	
+	mask no homo	7	0200704	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	mask no homo	7	0200705	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	mask no homo	7	0200706	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	mask no homo	7	0200707	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	mask no homo	8	0200800	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	mask no homo	8	0200801	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		8	0200802	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		8	0200803	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	epi2anat	8	0200804	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		8	0200805	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		8	0200806	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		8	0200807	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	anat2template	8	0200808	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	epi2anat	9	0200900	1	1	1	
+		9	0200901	1	1	1	
+		9	0200902	1	1	1	
+		9	0200903	1	1	1	
+		9	0200904	1	1	1	
+		9	0200905	1	1	1	
+		9	0200906	1	1	1	
+		9	0200907	1	1	1	
+		9	0200908	1	1	1	
+		9	0200909	1	1	1	
+		11	0201100	1	1.5	1	
+		11	0201101	1	1.5	1	
+		11	0201102	1	1.5	1	
+		11	0201103	1	1.5	1	
+		11	0201104	1	1.5	1	
+		11	0201105	1	1.5	1	
+		11	0201106	1	1.5	1	
+		11	0201107	1	1.5	1	
+		11	0201108	1	1.5	1	
+		11	0201109	1	1.5	1	
+		12	0201200	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		12	0201201	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		12	0201202	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		12	0201203	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		12	0201204	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		12	0201205	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		12	0201206	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		12	0201207	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		12	0201208	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		13	0201300	1	3	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		13	0201301	1	3	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		13	0201302	1	3	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		13	0201303	1	3	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		13	0201304	1	3	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		13	0201305	1	3	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		13	0201306	1	3	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		13	0201307	1	3	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		13	0201308	1	3	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		13	0201309	1	3	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		14	0201400	1	4	1	
+		14	0201401	1	4	1	
+		14	0201402	1	4	1	
+		14	0201403	1	4	1	
+		14	0201404	1	4	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		14	0201405	1	4	1	
+		14	0201406	1	4	1	
+		14	0201407	1	4	1	
+		14	0201408	1	4	1	
+		14	0201409	1	4	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		15	0201500	1	2	1	
+		15	0201501	1	2	1	
+		15	0201502	1	2	1	
+		15	0201503	1	2	1	
+		15	0201504	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		15	0201505	1	2	1	
+		15	0201506	1	2	1	
+		15	0201507	1	2	1	
+		15	0201508	1	2	1	
+		15	0201509	1	2	1	
+		16	0201600	1	1	1	
+		16	0201601	1	1	1	
+		16	0201602	1	1	1	
+		16	0201603	1	1	1	
+		16	0201604	1	1	1	
+		16	0201605	1	1	1	
+		16	0201606	1	1	1	
+		16	0201607	1	1	1	
+		16	0201608	1	1	1	
+		16	0201609	1	1	1	
+		16	0201610	1	1	1	
+		16	0201611	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		16	0201612	1	1	1	
+	mask not homo	17	0201700	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	mask not homo	17	0201701	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	mask not homo	17	0201702	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	mask not homo	17	0201703	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	mask not homo	17	0201704	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	mask not homo	17	0201705	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+	mask not homo	17	0201706	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		17	0201707	2	1	1	
+		17	0201708	2	1	1	
+		17	0201709	2	1	1	
+		17	0201710	2	1	1	
+		17	0201711	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		17	0201712	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
 							
 						0 = not preprocessed 	rabies_anat_inho_args
 						1 = preprocessed	rabies_autobox_args
