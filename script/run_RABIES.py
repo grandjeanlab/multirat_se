@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # qsub -l 'procs=1,mem=32gb,walltime=48:00:00' -I
 # cd /home/traaffneu/margal/code/multirat_se/script/
 # python run_RABIES.py
@@ -11,17 +13,18 @@ from subprocess import call
 
 # ---Init Variables ---
 
-init_folder='/home/traaffneu/margal/code/multirat_se/script/'                                   # location of the codes
 metadata_path='/home/traaffneu/margal/code/multirat_se/script/table/metadata_rabies.tsv'        # meta-data table
 
-df = pd.read_csv(metadata_path, sep='\t')             # load the table
+df = pd.read_csv(metadata_path, sep='\t')                                                       # load the table
 df = df.loc[(df['exclude'] != 'yes')]
+print(df)
 
 
 #--- Function to submit job to HPC --- 
 
 def queue_process(cmd):
-    p1 = subprocess.Popen(["echo", f"${{PWD}}/{cmd}"], stdout=subprocess.PIPE)
+    init_folder='/home/traaffneu/margal/code/multirat_se/script'                              # location of the codes
+    p1 = subprocess.Popen(["echo", f"{init_folder}/{cmd}"], stdout=subprocess.PIPE)
     subprocess.call(["qsub", "-N", 's001', "-l", 'nodes=1:ppn=1,mem=12gb,walltime=8:00:00'], stdin=p1.stdout)        #subprocess.call(["./RABIES_preprocess.sh", subj_num, TR, correction_arg], shell=False) #run RABIES_preprocess, giving additional inputs: correction_args, specified in metadat_rabies, submit job to qsub
 
 
@@ -39,20 +42,14 @@ for index in range(0, len(df)):
     print("TR:", TR)
     
     if rabies_preprocess == '2' :
-        queue_process(f'RABIES_preprocess.sh {subj_num} {TR} {correction_arg}')
-        print("Corrected RABIES preprocess.")
+       queue_process(f'RABIES_preprocess.sh {subj_num} {TR} {correction_arg}')
+       print("Corrected RABIES preprocess.")
         
     elif rabies_preprocess == '0' :
-        subprocess.call(["./RABIES_preprocess.sh", subj_num, TR], shell=False)  #run RABIES_preprocess, giving inputs: subj_num, TR 
+        queue_process(f'RABIES_preprocess.sh {subj_num} {TR}')  #run RABIES_preprocess, giving inputs: subj_num, TR 
         print("Standard RABIES_preprocess. No correction needed.")
             
     else :                                                                  # if rabies_preprocess == 1 :
         print("Data have already been preprocessed. Go to next dataset")   
         continue                                                            # go to next iteration
 
-
-
-# --- RABIES arguments for corrections ---
-# rabies_anat_inho_args = "--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
-# rabies_autobox_args = "--anat_autobox --bold_autobox"
-# rabies_commonspace_args = "--commonspace_reg=masking=false,brain_extraction=true,template_registration=SyN,fast_commonspace=true --commonspace_resampling 0.3x0.3x0.3"
