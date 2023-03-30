@@ -6,29 +6,29 @@
 
 #qsub -l 'procs=1,mem=24gb,walltime=12:00:00' -I 
 #cd /home/traaffneu/margal/code/multirat_se/scripts/
-# ./ convert_ciobanu.sh
+# ./convert_bruker.sh
 
 
 # ---- Init varaibles ----
 module load afni
 root_dir='/project/4180000.19/multirat_stim/to_convert/test_marie'
 
-cd $root_dir/raw_ciobanu/data          #directory of data to be converted into bids format
+cd $root_dir/raw_lupe/data                       #directory of data to be converted into bids format
 
 output_dir=$root_dir'/export'                  #create the variable output_dir to be put in folder export  
 mkdir -p $output_dir 
 
-dataset_name='Ciobanu01'                           #name dataset received 
+dataset_name='Lupe'                           #name dataset received 
 
 ds_type=02 
-ds_id=016                                          #because already 12 datasets aquired (see, /project/4180000.19/multirat_stim/bids/)
+ds_id=013                                    #because already 12 datasets aquired (see, /project/4180000.19/multirat_stim/bids/)
 id=0    
 
 # --- Convert to BIDS ---- 
 
 ls . | while read line                    #line is a variable, while read all folders (=line) 
 do                                        #start loop 
-cd $root_dir/raw_ciobanu/data/$line         #go to directory of each line/folder
+cd $root_dir/raw_lupe/data/$line         #go to directory of each line/folder
 
 sub=$ds_type$ds_id'0'$id                  #define subject ID
 
@@ -47,10 +47,14 @@ Bru2 -a -z -o tmp anat/pdata/1/                                                 
 3dresample -inset tmp.nii.gz -prefix  $output_sub_dir'/anat/'$anat_name -orient LPI         #change scan orientation, save into output directory 
 rm tmp.nii.gz
 
-#func_1 
+3dTcat -prefix $output_sub_dir'/anat/sub-'$sub'_ses-'$ses'_T2w_3D.nii.gz' $output_sub_dir'/anat/'$anat_name'[0]'     # convert the anatomical data to a 3D nifti file
+#3dcalc -a $output_sub_dir'/anat/sub-'$sub'_ses-'$ses'_T2w_3D.nii.gz' -datum float -expr 'a' -prefix $output_sub_dir'/anat/sub-'$sub'_ses-'$ses'_T2w_3D.nii.gz'
+
+
+#func
 func_name='sub-'$sub'_ses-'$ses'_run-1-1_bold.nii.gz'
 
-Bru2 -z -a -o tmp func_1/pdata/1/                                                           #convert data in folder 6 into BIDS format
+Bru2 -z -a -o tmp func/pdata/1/                                                           #convert data in folder 6 into BIDS format
 3dresample -inset tmp.nii.gz -prefix  $output_sub_dir'/func/'$func_name -orient LPI        #Change scan orientation, save into output directory 
 rm tmp.nii.gz
 
