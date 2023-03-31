@@ -21,13 +21,13 @@ exclude	exclude.reason	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	rabies_cor
 		2	0200300	1	1	1	
 		3	0200301	1	1	1	
 		3	0200302	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
-	anat mask failed	3	0200303	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox --commonspace_reg=masking=false,brain_extraction=true,template_registration=SyN,fast_commonspace=true --commonspace_resampling 0.3x0.3x0.3"
+	anat mask failed	3	0200303	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox --commonspace_reg=masking=false,brain_extraction=true,template_registration=SyN,fast_commonspace=true --commonspace_resampling 0.3x0.3x0.3"
 		3	0200304	1	1	1	
 		3	0200305	1	1	1	
 		3	0200306	1	1	1	
 	anat2template	3	0200307	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
-		3	0200308	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
-	anat2template	3	0200309	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+		3	0200308	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+	anat2template	3	0200309	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox --commonspace_reg=masking=false,brain_extraction=true,template_registration=SyN,fast_commonspace=true --commonspace_resampling 0.3x0.3x0.3"
 	template2std	4	0200400	1	1	1	
 	template2std	4	0200401	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
 	template2std	4	0200402	1	1	1	
@@ -58,7 +58,7 @@ exclude	exclude.reason	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	rabies_cor
 		6	0200607	1	1.5	1	
 	epi2anat / miss part of brain	6	0200608	1	1.5	1	
 	epi2anat	6	0200609	1	1.5	1	
-		7	0200700	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		7	0200700	1	2	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
 	inconsistant FOV	7	0200701	1	2	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
 	inconsistant FOV	7	0200702	1	2	1	
 	inconsistant FOV	7	0200703	1	2	1	
@@ -69,7 +69,7 @@ exclude	exclude.reason	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	rabies_cor
 	mask no homo	8	0200800	1	2	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
 	mask no homo	8	0200801	1	2	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
 		8	0200802	1	2	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
-		8	0200803	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+	subprocess.call failed, -> Command 'EPI-preprocessing.sh --> crash 0230330-195627	8	0200803	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
 	epi2anat	8	0200804	1	2	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
 		8	0200805	1	2	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
 		8	0200806	1	2	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
@@ -97,7 +97,7 @@ exclude	exclude.reason	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	rabies_cor
 		11	0201109	1	1.5	1	
 		12	0201200	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
 		12	0201201	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
-		12	0201202	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+	subprocess. all error command -> crash-20230330-193442	12	0201202	1	1	0	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
 		12	0201203	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
 		12	0201204	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
 		12	0201205	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
@@ -105,15 +105,15 @@ exclude	exclude.reason	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	rabies_cor
 		12	0201207	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
 		12	0201208	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
 		13	0201300	1	3	1	
-		13	0201301	1	3	1	
-		13	0201302	1	3	1	
-		13	0201303	1	3	1	
-		13	0201304	1	3	1	
-		13	0201305	1	3	1	
-		13	0201306	1	3	1	
-		13	0201307	1	3	1	
-		13	0201308	1	3	1	
-		13	0201309	1	3	1	
+		13	0201301	1	3	0	
+		13	0201302	1	3	0	
+		13	0201303	1	3	0	
+		13	0201304	1	3	0	
+		13	0201305	1	3	0	
+		13	0201306	1	3	0	
+		13	0201307	1	3	0	
+		13	0201308	1	3	0	
+		13	0201309	1	3	0	
 		14	0201400	1	4	1	
 		14	0201401	1	4	1	
 		14	0201402	1	4	1	
@@ -128,7 +128,7 @@ exclude	exclude.reason	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	rabies_cor
 		15	0201501	1	2	1	
 		15	0201502	1	2	1	
 		15	0201503	1	2	1	
-		15	0201504	1	2	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+		15	0201504	1	2	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
 		15	0201505	1	2	1	
 		15	0201506	1	2	1	
 		15	0201507	1	2	1	
@@ -145,21 +145,21 @@ exclude	exclude.reason	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	rabies_cor
 		16	0201608	1	1	1	
 		16	0201609	1	1	1	
 		16	0201610	1	1	1	
-		16	0201611	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+	func not 4-dimensional -> crash-20230330-172048	16	0201611	1	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
 		16	0201612	1	1	1	
-	mask not homo	17	0201700	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
-	mask not homo	17	0201701	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+	mask not homo	17	0201700	2	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+	mask not homo	17	0201701	2	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
 	mask not homo	17	0201702	2	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
-	mask not homo / didn't finish	17	0201703	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
-	mask not homo	17	0201704	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
-	mask not homo	17	0201705	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
-	mask not homo	17	0201706	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+	mask not homo / didn't finish	17	0201703	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox --commonspace_reg=masking=false,brain_extraction=true,template_registration=SyN,fast_commonspace=true --commonspace_resampling 0.3x0.3x0.3"
+	mask not homo	17	0201704	2	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+	mask not homo	17	0201705	2	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+	mask not homo	17	0201706	2	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
 		17	0201707	2	1	1	
 		17	0201708	2	1	1	
 		17	0201709	2	1	1	
 		17	0201710	2	1	1	
-		17	0201711	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
-		17	0201712	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"
+		17	0201711	2	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"
+		17	0201712	2	1	2	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox --commonspace_reg=masking=false,brain_extraction=true,template_registration=SyN,fast_commonspace=true --commonspace_resampling 0.3x0.3x0.3"
 							
 						0 = not preprocessed 	rabies_anat_inho_args
 						1 = preprocessed	rabies_autobox_args
