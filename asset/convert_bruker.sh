@@ -44,12 +44,8 @@ func_name='sub-'$sub'_ses-'$ses'_run-1_bold.nii.gz'
 
 #anat
 Bru2 -a -z -o tmp anat/pdata/1/                                                             #convert create tmp folder into anat/acqp directory -> convert
-3dresample -inset tmp.nii.gz -prefix  $output_sub_dir'/anat/'$anat_name -orient LPI         #change scan orientation, save into output directory 
+3dresample -inset tmp.nii.gz[0] -prefix  $output_sub_dir'/anat/'$anat_name -orient LPI         #change scan orientation, save into output directory 
 rm tmp.nii.gz
-
-3dTcat -prefix $output_sub_dir'/anat/sub-'$sub'_ses-'$ses'_T2w_3D.nii.gz' $output_sub_dir'/anat/'$anat_name'[0]'     # convert the anatomical data to a 3D nifti file
-#3dcalc -a $output_sub_dir'/anat/sub-'$sub'_ses-'$ses'_T2w_3D.nii.gz' -datum float -expr 'a' -prefix $output_sub_dir'/anat/sub-'$sub'_ses-'$ses'_T2w_3D.nii.gz'
-
 
 #func
 func_name='sub-'$sub'_ses-'$ses'_run-1-1_bold.nii.gz'
