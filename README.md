@@ -1,6 +1,6 @@
 # Multicenter comparison of sensory evoked fMRI in the rat.
 
-## Description**
+## Description
 Extending the international collaborative project of Grandjean et al., 
 we aim to perform a fMRI multi-center comparison of stimulus-  evoked
 response in rats. The main goal is to optimize fMRI pre-processing to 
@@ -20,3 +20,6 @@ eventually be published in a peer-reviewed journal.
 - The generalization of hemodynamic response function (HRF) across fMRI datasets
 - To  test the anatommical specificity of the sensory evoked response in rats 
 - To foster collaborations and discussion within the community
+
+## Links   
+[Preregistration DOI: https://doi.org/10.17605/OSF.IO/8VY9R](https://doi.org/10.17605/OSF.IO/8VY9R)
