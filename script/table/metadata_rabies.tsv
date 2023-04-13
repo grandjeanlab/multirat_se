@@ -137,7 +137,7 @@ yes	3. epi2anat 2. epi2anat 1. epi2anat, brain+background 	13	0201308	1	3	1	"--a
 	QC ok but ugly scans lots of noise	16	0201600	1	1	1		
 		16	0201601	1	1	1		
 		16	0201602	1	1	1		
-		16	0201603	1	1	1		
+		16	0201603	1	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox"	
 		16	0201604	1	1	1		
 		16	0201605	1	1	1		
 		16	0201606	1	1	1		
@@ -160,6 +160,32 @@ yes	3. fail 2. func not 4-dimensional -> crash-20230330-172048	16	0201611	1	1	1	
 		17	0201710	2	1	1		
 	QC ok but noise + intensity not homo 	17	0201711	2	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	
 	QC ok but noise + intensity not homo 	17	0201712	2	1	1	"--anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_autobox --bold_autobox --commonspace_reg=masking=false,brain_extraction=true,template_registration=SyN,fast_commonspace=true --commonspace_resampling 0.3x0.3x0.3"	
+			201800	1	1.5	0		
+			201801	1	1.5	0		
+			201802	1	1.5	0		
+			201803	1	1.5	0		
+			201804	1	1.5	0		
+			201805	1	1.5	0		
+yes	missing func data in raw data		201806	1	1.5	0		
+			201807	1	1.5	0		
+			201808	1	1.5	0		
+			201809	1	1.5	0		
+			201900	2	1.5	0		
+			201901	2	1.5	0		
+			201902	2	1.5	0		
+			201903	2	1.5	0		
+			201904	2	1.5	0		
+			201905	2	1.5	0		
+yes	missing func image in raw data		201906	2	1.5	0		
+yes	missing func image in raw data		201907	2	1.5	0		
+			201908	2	1.5	0		
+			201909	2	1.5	0		
+			202000	3	1.5	0		
+			202001	3	1.5	0		
+			202002	3	1.5	0		
+			202003	3	1.5	0		
+								
+								
 								
 						0 = not preprocessed 	rabies_anat_inho_args	
 						1 = preprocessed	rabies_autobox_args	
