@@ -10,3 +10,4 @@ residual='/project/4180000.19/multirat_stim/rabies_test/first_level_analysis/res
 masker = NiftiLabelsMasker(labels_img=atlas, mask_img=mask, standardize=True)
 masker.fit_transform(zstat)
 
+masker.fit_transform(residual)
