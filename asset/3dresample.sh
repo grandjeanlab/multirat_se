@@ -4,7 +4,7 @@
 # Select the timeseries without the frists containing drop of signal
 
 module load afni
-root_dir='/project/4180000.19/multirat_stim/test_3dresample'
+root_dir='/project/4180000.19/multirat_stim/scratch/test_3dresample'
 
 input_dir=$root_dir'/input/'
 output_dir=$root_dir'/output/'
