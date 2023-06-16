@@ -11,24 +11,24 @@
 
 # ---- Init varaibles ----
 module load afni
-root_dir='/project/4180000.19/multirat_stim/to_convert/test_marie'
+root_dir='/project/4180000.19/multirat_stim/scratch/to_convert/test_marie'
 
-cd $root_dir/raw_yulab                         #directory of data to be converted into bids format
+cd $root_dir/raw_hess/heat_stim/data/                        #directory of data to be converted into bids format
 
 output_dir=$root_dir'/export'                  #create the variable output_dir to be put in folder export  
 mkdir -p $output_dir 
 
-dataset_name='YuLab'                           #name dataset received 
+dataset_name='Hess'                           #name dataset received 
 
 ds_type=02 
-ds_id=020                                      #because already 12 datasets aquired (see, /project/4180000.19/multirat_stim/bids/)
+ds_id=014                                      #because already 12 datasets aquired (see, /project/4180000.19/multirat_stim/bids/)
 id=0  
 
 # --- Convert to BIDS ---- 
 
 ls . | while read line                    #line is a variable, while read all folders (=line) 
 do                                        #start loop 
-cd $root_dir/raw_yulab/$line              #go to directory of each line/folder
+cd $root_dir/raw_hess/heat_stim/data/$line              #go to directory of each line/folder
 
 sub=$ds_type$ds_id'0'$id                  #define subject ID
 
@@ -44,23 +44,13 @@ func_name='sub-'$sub'_ses-'$ses'_run-1_bold.nii.gz'
 
 #anat
 Bru2 -a -z -o tmp anat/pdata/1/                                                            #convert create tmp folder into anat/acqp directory -> convert
-3dWarp -deoblique tmp.nii.gz
 3dresample -inset tmp.nii.gz -prefix  $output_sub_dir'/anat/'$anat_name -orient LPI         #change scan orientation, save into output directory 
 rm tmp.nii.gz
-3drefit -cmass center $output_sub_dir'/anat/'$anat_name                                     # so that the images are properly centered
-
 
 #func
-Bru2 -z -a -o tmp func_2/pdata/1/                                                           #convert data in folder 6 into BIDS format
-3dWarp -deoblique tmp.nii.gz
+Bru2 -z -a -o tmp func/pdata/1/                                                           #convert data in folder 6 into BIDS format
 3dresample -inset tmp.nii.gz -prefix  $output_sub_dir'/func/'$func_name -orient LPI        #Change scan orientation, save into output directory 
 rm tmp.nii.gz
-3drefit -cmass center $output_sub_dir'/func/'$func_name
-
-#func_name='sub-'$sub'_ses-'$ses'_run-1-1000_bold.nii.gz'
-#Bru2 -z -a -o tmp_1-1000 func_1/pdata/1000/                                                                        #convert data in folder 6 into BIDS format
-#3dresample -inset tmp_1-1000.nii.gz -prefix  $output_sub_dir'/func/'$func_name'tmp_1-1000.nii.gz' -orient LPI        #Change scan orientation, save into output directory 
-#rm tmp_1-1000.nii.gz
 
 id=$((id + 1))                  #id number increases by 1
 
