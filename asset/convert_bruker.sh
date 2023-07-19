@@ -45,7 +45,7 @@ func_name='sub-'$sub'_ses-'$ses'_run-1_bold.nii'
 
 # anat   
 cp $root_dir'/raw_sumiyoshi/data/'$line'/anat/'$line'_anat.nii' $output_sub_dir'/anat/'tmp_$anat_name         # copy the anat file into the output directory and rename it accordingly
-fslorient -setsform 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 $output_sub_dir'/anat/'tmp_$anat_name                     # correct the labelled of the orientation, in this case to get posterior to anterior and superior to inferior
+fslorient fslswapdim $nifti_file -x y z $output_sub_dir'/anat/'tmp_$anat_name                                 # flip signal on the x axis,  Right -
 fslreorient2std $output_sub_dir'/anat/'tmp_$anat_name  $output_sub_dir'/anat/'$anat_name 
 rm $output_sub_dir'/anat/'tmp_$anat_name
 
@@ -53,6 +53,7 @@ rm $output_sub_dir'/anat/'tmp_$anat_name
 # func
 cp $root_dir'/raw_sumiyoshi/data/'$line'/func/'$line'_func.nii' $output_sub_dir'/func/'tmp_$func_name         # copy the anat file into the output directory and rename it accordingly
 fslorient -setsform 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1  $output_sub_dir'/func/'tmp_$func_name                    # correct the labelled of the orientation, in this case to get posterior to anterior and superior to inferior
+fslorient -setqform 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 $output_sub_dir'/func/'tmp_$func_name                     # correct the labelled of the orientation, in this case to get posterior to anterior and superior to inferior
 fslreorient2std $output_sub_dir'/func/'tmp_$func_name  $output_sub_dir'/func/'$func_name                      #Change scan orientation to match stadard one
 rm $output_sub_dir'/func/'tmp_$func_name
 
