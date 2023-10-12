@@ -1,5 +1,8 @@
 # Multicenter comparison of sensory evoked fMRI in the rat.
 
+*How Variable Are Our Rat Sensory-Evoked Functional MRI Datasets?*
+
+
 ![Alt text](asset/figures/fig.svg/cover_multirat_se.png)
 
 ## Description
