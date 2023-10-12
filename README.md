@@ -1,6 +1,6 @@
 # Multicenter comparison of sensory evoked fMRI in the rat.
 
-![Alt text](cover_multirat_se-1.png)
+![Alt text](asset/figures/fig.svg/cover_multirat_se.png)
 
 ## Description
 Extending the international collaborative project of Grandjean et al., 
