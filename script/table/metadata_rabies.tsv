@@ -1,197 +1,231 @@
-exclude	exclude.reason	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	rabies_cor	QC_1	Comment	QC_2: autobox	comment	QC_3: N4	comment	QC_4 bold2anat	comment	Conclu			
-		1	0200100	1	2	1		ok											
-		1	0200101	1	2	1		ok											
-		1	0200102	1	2	1		ok											
-		1	0200103	1	2	1		ok											
-		1	0200104	1	2	1		ok											
-		1	0200105	1	2	1		ok											
-		1	0200106	1	2	1	"--anat_autobox --bold_autobox"	Epi2anat		ok									
-		1	0200107	1	2	1		ok											
-		1	0200108	1	2	1		ok											
-		1	0200109	1	2	1		ok											
-		2	0200200	1	1.5	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash	anat inho	ok									
-		2	0200201	1	1.5	1		ok											
-		2	0200202	1	1.5	1		ok											
-		2	0200203	1	1.5	1		ok											
-		2	0200204	1	1.5	1		ok											
-		2	0200205	1	1.5	1		ok											
-		2	0200206	1	1.5	1		ok											
-		2	0200207	1	1.5	1		ok											
-		2	0200208	1	1.5	1		ok											
-		2	0200300	1	1	1		ok											
-		3	0200301	1	1	1		ok											
-		3	0200302	1	1	1		ok											
-		3	0200303	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash	anat_inho then bold_inho	ok									
-		3	0200304	1	1	1		ok											
-		3	0200305	1	1	1		ok											
-		3	0200306	1	1	1		ok											
-		3	0200307	1	1	2	"--anat_autobox --bold_autobox"	epi2anat		ok									
-		3	0200308	1	1	1		ok											
-yes	raw images	3	0200309	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat		anat mask		masks	anat et bold	masks	anat et bold	exclude			
-		4	0200400	1	1	1		ok											
-		4	0200401	1	1	1		ok											
-		4	0200402	1	1	1		ok											
-		4	0200403	1	1	1		ok											
-		4	0200404	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash	??	crash 	??	ok							
-		4	0200405	1	1	1		ok											
-		4	0200406	1	1	1		ok											
-		4	0200407	1	1	1		ok											
-		4	0200408	1	1	1		ok											
-		4	0200409	1	1	1		ok											
-		5	0200500	1	1	1		ok											
-		5	0200501	1	1	1		ok											
-		5	0200502	1	1	1		ok											
-		5	0200503	1	1	1		ok											
-		5	0200504	1	1	1		ok											
-		5	0200505	1	1	1		ok											
-		5	0200506	1	1	1		ok											
-		5	0200507	1	1	1		ok											
-		5	0200508	1	1	1		ok											
-		5	0200509	1	1	1		ok											
-		6	0200600	1	1.5	1		ok											
-		6	0200601	1	1.5	1		ok											
-		6	0200602	1	1.5	1		ok											
-		6	0200603	1	1.5	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash	anat_inho then bold 	crash	not complete 	ok							
-		6	0200604	1	1.5	1		ok											
-		6	0200605	1	1.5	1		ok											
-		6	0200606	1	1.5	1		ok											
-		6	0200607	1	1.5	1		ok											
-		6	0200608	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
-		6	0200609	1	1.5	1		ok											
-		7	0200700	1	2	1		ok											
-		7	0200701	1	2	1		ok											
-		7	0200702	1	2	1		ok											
-		7	0200703	1	2	1		ok											
-		7	0200704	1	2	1		ok											
-		7	0200705	1	2	1		ok											
-		7	0200706	1	2	1		ok											
-		7	0200707	1	2	1		ok											
-		8	0200800	1	2	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat	miss brain	ok 	miss brain	epi2anat	miss brain + croping	epi2anat	keep preprocess_1	ok			
-		8	0200801	1	2	1		ok											
-		8	0200802	1	2	1		ok											
-		8	0200803	1	2	1		ok											
-		8	0200804	1	2	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat	miss brain	epi2anat	miss brain	epi2anat 	miss brain	epi2anat	keep preprocess_1	ok 			
-		8	0200805	1	2	1		ok											
-		8	0200806	1	2	1		ok											
-		8	0200807	1	2	1		ok											
-		8	0200808	1	2	1		ok											
-		9	0200900	1	1	1		ok											
-		9	0200901	1	1	1		ok											
-		9	0200902	1	1	1		ok											
-		9	0200903	1	1	1		ok											
-		9	0200904	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		9	0200905	1	1	1		ok											
-		9	0200906	1	1	1		ok											
-		9	0200907	1	1	1		ok											
-		9	0200908	1	1	1		ok											
-		9	0200909	1	1	1		ok											
-		10	0201000	1	2	2	"--anat_autobox --bold_autobox"												
-		10	0201001	1	2	2	"--anat_autobox --bold_autobox"												
-		10	0201002	1	2	1	"--anat_autobox --bold_autobox"												
-		10	0201003	1	2	1	"--anat_autobox --bold_autobox"												
-		10	0201004	1	2	1	"--anat_autobox --bold_autobox"												
-		10	0201005	1	2	1	"--anat_autobox --bold_autobox"												
-		10	0201006	1	2	1	"--anat_autobox --bold_autobox"												
-		10	0201007	1	2	1	"--anat_autobox --bold_autobox"												
-		10	0201008	1	2	1	"--anat_autobox --bold_autobox"												
-		10	0201009	1	2	1	"--anat_autobox --bold_autobox"												
-		11	0201100	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		11	0201101	1	1.5	1		ok											
-		11	0201102	1	1.5	1		ok											
-		11	0201103	1	1.5	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat	miss brain	ok									ok
-		11	0201104	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									ok
-		11	0201105	1	1.5	1		ok											ok
-		11	0201106	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
-		11	0201107	1	1.5	1	"--anat_autobox --bold_autobox"	crash	All samples map outside moving image buffer	ok									
-		11	0201108	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		11	0201109	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		12	0201200	1	1	1		ok											
-		12	0201201	1	1	1		ok											
-		12	0201202	1	1	1		ok											
-	manual cropping	12	0201203	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	epi2anat + masks	cropping fail	epi2anat	anat mask	crash	not complete	crash	why ? ask	more time and memo, repro arg 2. 	crash	manual cropping	
-	manual cropping	12	0201204	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	epi2anat	miss brain	epi2anat		crash	not complete	crash	why ? ask 	more time and memo, repro arg 2. 	crash	manual cropping	
-	manual cropping	12	0201205	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash	anat inho	crash	not complete	crash	not complete	crash	why ? ask 	more time and memo, repro arg 2. 	crash	manual cropping	
-		12	0201206	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat		ok									
-		12	0201207	1	1	1		ok											
-		12	0201208	1	1	1		ok											
-		13	0201300	1	3	1	"--anat_autobox --bold_autobox"	epi2anat + masks		ok									
-		13	0201301	1	3	1		ok											
-		13	0201302	1	3	1	"--anat_autobox --bold_autobox"	epi2anat + masks		ok									
-		13	0201303	1	3	1		ok											
-		13	0201304	1	3	1		ok											
-		13	0201305	1	3	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
-		13	0201306	1	3	1		ok											
-		13	0201307	1	3	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
-		13	0201308	1	3	1	"--anat_autobox --bold_autobox"	epi2anat +mask		ok									
-		13	0201309	1	3	1	"--anat_autobox --bold_autobox"	crash	main_wf.bold_main_wf.bold_confs_wf.estimate_confounds"	ok									
-		14	0201400	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
-yes	raw data, func missing	14	0201401	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
-		14	0201402	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
-		14	0201403	1	4	1	"--anat_autobox --bold_autobox"			ok									
-		14	0201404	1	4	1	"--anat_autobox --bold_autobox"			ok									
-		14	0201405	1	4	1		ok											
-		14	0201406	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
-		14	0201407	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
-		14	0201408	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
-		14	0201409	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
-		15	0201500	1	2	1		ok	remove commonspace_reg ?	.									
-		15	0201501	1	2	1		ok	"--anat_autobox --bold_autobox" -> error : main_wf.bold_autobox	.									
-		15	0201502	1	2	1		ok		.									
-		15	0201503	1	2	1		ok		.									
-		15	0201504	1	2	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
-		15	0201505	1	2	1		ok		.									
-		15	0201506	1	2	1		ok		.									
-		15	0201507	1	2	1		ok		.									
-		15	0201508	1	2	1		ok		.									
-		15	0201509	1	2	1		ok		.									
-		16	0201600	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		16	0201601	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		16	0201602	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		16	0201603	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		16	0201604	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		16	0201605	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		16	0201606	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		16	0201607	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		16	0201608	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		16	0201609	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		16	0201610	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		16	0201611	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	crash	"main_wf.bold_main_wf.gen_bold_ref.gen_ref"	crash	"main_wf.bold_main_wf.gen_bold_ref.gen_ref"	crash	main_wf.bold_main_wf.gen_bold_ref.gen_ref	crash	not complete	check orig img	ok		
-		16	0201612	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		17	0201700	2	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		17	0201701	2	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		17	0201702	2	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		17	0201703	2	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		17	0201704	2	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		17	0201705	2	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		17	0201706	2	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		17	0201707	2	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		17	0201708	2	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		17	0201709	2	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		17	0201710	2	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		17	0201711	2	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		17	0201712	2	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
-		18	201800	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
-		18	201801	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
-		18	201802	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
-	manual cropping	18	201803	1	1.5	1				ok					4D -> 3D anat corrected				
-		18	201804	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
-		18	201805	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
-yes	missing func image in raw data	18	201806	1	1.5	1													
-	manual cropping	18	201807	1	1.5	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat	could use better croping 	epi2anat	bold mask	crash	not complete	crash 	not complete	manual cropping + default args	ok		
-		18	201808	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
-		18	201809	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
-		19	201900	2	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
-		19	201901	2	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
-	manual cropping	19	201902	2	1.5	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	crash 	anat inho	crash	not complete	crash	not complete	crash	not complete	manual croping	ok		
-	manual cropping	19	201903	2	1.5	1				ok									
-		19	201904	2	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
-		19	201905	2	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
-yes	missing func image in raw data	19	201906	2	1.5	1													
-yes	missing func image in raw data	19	201907	2	1.5	1													
-		19	201908	2	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
-		19	201909	2	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
-																			
-																			
-						0 = default arg													
-						1 = already prepro													
-						2 = prepro with args													
+exclude	exclude.reason	comments	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	rabies_cor	QC_1	Comment	QC_2: autobox	comment	QC_3: N4	comment	QC_4 bold2anat	comment	Conclu			
+			1	0200100	1	2	1		ok											
+			1	0200101	1	2	1		ok											
+			1	0200102	1	2	1		ok											
+			1	0200103	1	2	1		ok											
+			1	0200104	1	2	1		ok											
+			1	0200105	1	2	1		ok											
+			1	0200106	1	2	1	"--anat_autobox --bold_autobox"	Epi2anat		ok									
+			1	0200107	1	2	1		ok											
+			1	0200108	1	2	1		ok											
+			1	0200109	1	2	1		ok											
+			2	0200200	1	1.5	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash	anat inho	ok									
+			2	0200201	1	1.5	1		ok											
+			2	0200202	1	1.5	1		ok											
+			2	0200203	1	1.5	1		ok											
+			2	0200204	1	1.5	1		ok											
+			2	0200205	1	1.5	1		ok											
+			2	0200206	1	1.5	1		ok											
+			2	0200207	1	1.5	1		ok											
+			2	0200208	1	1.5	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	2	0200300	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	3	0200301	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies,  flip R/L	3	0200302	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	3	0200303	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash	anat_inho then bold_inho	ok									
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	3	0200304	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies,  flip R/L	3	0200305	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies,  flip R/L	3	0200306	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	3	0200307	1	1	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	3	0200308	1	1	1		ok											
+yes	raw images	3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	3	0200309	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat		anat mask		masks	anat et bold	masks	anat et bold	exclude			
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	4	0200400	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	4	0200401	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	4	0200402	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	4	0200403	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	4	0200404	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash	??	crash 	??	ok							
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	4	0200405	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	4	0200406	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	4	0200407	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	4	0200408	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	4	0200409	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	5	0200500	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	5	0200501	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies,  flip R/L 	5	0200502	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	5	0200503	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	5	0200504	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	5	0200505	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies,  flip R/L	5	0200506	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	5	0200507	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	5	0200508	1	1	1		ok											
+		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	5	0200509	1	1	1		ok											
+			6	0200600	1	1.5	1		ok											
+			6	0200601	1	1.5	1		ok											
+			6	0200602	1	1.5	1		ok											
+			6	0200603	1	1.5	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash	anat_inho then bold 	crash	not complete 	ok							
+			6	0200604	1	1.5	1		ok											
+			6	0200605	1	1.5	1		ok											
+			6	0200606	1	1.5	1		ok											
+			6	0200607	1	1.5	1		ok											
+			6	0200608	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+			6	0200609	1	1.5	1		ok											
+			7	0200700	1	2	1		ok											
+		flip R/L	7	0200701	1	2	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	could be better		ok, but 1st level diff from previously									
+		flip R/L	7	0200702	1	2	1		ok											
+		flip R/L	7	0200703	1	2	1		ok											
+			7	0200704	1	2	1		ok											
+			7	0200705	1	2	1		ok											
+			7	0200706	1	2	1		ok											
+		flip R/L	7	0200707	1	2	1		ok											
+			8	0200800	1	2	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat	miss brain	ok 	miss brain	epi2anat	miss brain + croping	epi2anat	keep preprocess_1	ok			
+			8	0200801	1	2	1		ok											
+			8	0200802	1	2	1		ok											
+			8	0200803	1	2	1		ok											
+		flip R/L	8	0200804	1	2	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat	miss brain	epi2anat	miss brain	epi2anat 	miss brain	epi2anat	keep preprocess_1	ok 			
+			8	0200805	1	2	1		ok											
+		flip R/L	8	0200806	1	2	1		ok											
+			8	0200807	1	2	1		ok											
+			8	0200808	1	2	1		ok											
+			9	0200900	1	1	1		ok											
+			9	0200901	1	1	1		ok											
+			9	0200902	1	1	1		ok											
+			9	0200903	1	1	1		ok											
+			9	0200904	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
+			9	0200905	1	1	1		ok											
+			9	0200906	1	1	1		ok											
+			9	0200907	1	1	1		ok											
+			9	0200908	1	1	1		ok											
+			9	0200909	1	1	1		ok											
+		manual cropping, fslorient, flip R/L	10	0201000	1	2	1		ok											
+		manual cropping, fslorient, flip R/L	10	0201001	1	2	1		ok											
+		manual cropping, fslorient, used 0201000 anat scan, flip R/L	10	0201002	1	2	1	"--anat_autobox --bold_autobox"	epi2anat: not well positioned											
+		manual cropping, fslorient, used 0201000 anat scan, flip R/L	10	0201003	1	2	1		Ok											
+		manual cropping, fslorient, used 0201000 anat scan	10	0201004	1	2	1		Ok											
+		manual cropping, fslorient	10	0201005	1	2	1		ok											
+		manual cropping, fslorient	10	0201006	1	2	1		ok											
+		manual cropping, fslorient	10	0201007	1	2	1		ok											
+		manual cropping, fslorient, used 0201000 anat scan	10	0201008	1	2	1		Ok											
+		manual cropping, fslorient	10	0201009	1	2	1		ok											
+			11	0201100	1	1.5	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat	miss brain	ok									
+		flip R/L	11	0201101	1	1.5	1		ok											
+			11	0201102	1	1.5	1		ok											
+		flip R/L	11	0201103	1	1.5	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat	miss brain	ok									ok
+		flip R/L	11	0201104	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									ok
+			11	0201105	1	1.5	1		ok											ok
+		flip R/L	11	0201106	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+			11	0201107	1	1.5	1	"--anat_autobox --bold_autobox"	crash	All samples map outside moving image buffer	ok									
+			11	0201108	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
+		flip R/L	11	0201109	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
+		3dresample	12	0201200	1	1	1		ok											
+		3dresample	12	0201201	1	1	1		ok											
+		3dresample	12	0201202	1	1	1		ok											
+		manual cropping, 3dresample                 3dresample (-5vo)  	12	0201203	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	epi2anat + masks	cropping fail	epi2anat	anat mask	crash	not complete	crash	why ? ask	more time and memo, repro arg 2. 	crash	manual cropping	
+		manual cropping, 3dresample                 3dresample (-5vo)  	12	0201204	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	epi2anat	miss brain	epi2anat		crash	not complete	crash	why ? ask 	more time and memo, repro arg 2. 	crash	manual cropping	
+		manual cropping, 3dresample                 3dresample (-5vo)  	12	0201205	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash	anat inho	crash	not complete	crash	not complete	crash	why ? ask 	more time and memo, repro arg 2. 	crash	manual cropping	
+		3dresample	12	0201206	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat		ok									
+		3dresample	12	0201207	1	1	1		ok											
+		3dresample	12	0201208	1	1	1		ok											
+		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201300	1	3	1	"--anat_autobox --bold_autobox"	epi2anat + masks		ok									
+		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201301	1	3	1		ok											
+		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201302	1	3	1	"--anat_autobox --bold_autobox"	epi2anat + masks		ok									
+		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201303	1	3	1		ok											
+		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201304	1	3	1		ok											
+		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201305	1	3	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201306	1	3	1		ok											
+		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201307	1	3	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201308	1	3	1	"--anat_autobox --bold_autobox"	epi2anat +mask		ok									
+		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201309	1	3	1	"--anat_autobox --bold_autobox"	crash	main_wf.bold_main_wf.bold_confs_wf.estimate_confounds"	ok									
+		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201400	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
+yes	raw data, func missing	3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201401	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
+		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201402	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
+		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201403	1	4	1	"--anat_autobox --bold_autobox"			ok									
+		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201404	1	4	1	"--anat_autobox --bold_autobox"			ok									
+		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201405	1	4	1		ok											
+		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201406	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
+		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201407	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
+		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201408	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
+		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201409	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
+			15	0201500	1	2	1		ok	remove commonspace_reg ?	.									
+			15	0201501	1	2	1		ok	"--anat_autobox --bold_autobox" -> error : main_wf.bold_autobox	.									
+			15	0201502	1	2	1		ok		.									
+			15	0201503	1	2	1		ok		.									
+			15	0201504	1	2	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+			15	0201505	1	2	1		ok		.									
+			15	0201506	1	2	1		ok		.									
+			15	0201507	1	2	1		ok		.									
+			15	0201508	1	2	1		ok		.									
+			15	0201509	1	2	1		ok		.									
+			16	0201600	1	1	1		ok		.									
+			16	0201601	1	1	1	"--anat_autobox --bold_autobox"			ok									
+			16	0201602	1	1	1	"--anat_autobox --bold_autobox"			ok									
+			16	0201603	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash		crash				crash:Error on "main_wf.bold_main_wf.gen_bold_ref.gen_ref"					
+			16	0201604	1	1	1		ok		.									
+			16	0201605	1	1	1		ok		.									
+			16	0201606	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"			misalignment		Ok							
+			16	0201607	1	1	1	"--anat_autobox --bold_autobox"			ok									
+			16	0201608	1	1	1		ok		misalignment									
+			16	0201609	1	1	1	"--anat_autobox --bold_autobox"			ok									
+			17	0201700	1	1	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+			17	0201701	1	1	1		ok		miss brain									
+			17	0201702	1	1	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+			17	0201703	1	1	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+			17	0201704	1	1	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+			17	0201705	1	1	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+			17	0201706	1	1	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+			17	0201707	1	1	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+			17	0201708	1	1	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+			17	0201709	1	1	1	"--anat_autobox --bold_autobox"	epi2anat		ok									
+			18	0201800	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
+			18	0201801	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
+			18	0201802	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
+		manual cropping	18	0201803	1	1.5	1				ok					4D -> 3D anat corrected				
+			18	0201804	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
+			18	0201805	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
+yes	missing func image in raw data		18	0201806	1	1.5	1													
+		manual cropping	18	0201807	1	1.5	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat	could use better croping 	epi2anat	bold mask	crash	not complete	crash 	not complete	manual cropping + default args	ok		
+			18	0201808	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
+			18	0201809	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
+			19	0201900	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
+			19	0201901	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
+		manual cropping	19	0201902	1	1.5	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	crash 	anat inho	crash	not complete	crash	not complete	crash	not complete	manual croping	ok		
+		manual cropping	19	0201903	1	1.5	1				ok									
+			19	0201904	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
+			19	0201905	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
+yes	missing func image in raw data		19	0201906	1	1.5	1													
+yes	missing func image in raw data		19	0201907	1	1.5	1													
+			19	0201908	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
+			19	0201909	1	1.5	1	"--anat_autobox --bold_autobox"	epi2anat	could use better croping 	ok									
+		fslorient	20	0202000	1	1.5	1		Ok											
+		fslorient, used 0202000 anat scan	20	0202001	1	1.5	1		Ok											
+		fslorient	20	0202002	1	1.5	1		Ok											
+		fslorient	20	0202003	2	1.5	1		Ok											
+		fslorient, used 0202000 anat scan	20	0202004	2	1.5	1		Ok											
+		fslorient, used 0202000 anat scan	20	0202005	2	1.5	1		Ok											
+		fslorient, used 0202000 anat scan	20	0202006	3	1.5	1		Ok											
+		fslorient, used 0202000 anat scan	20	0202007	3	1.5	1		Ok											
+		fslorient	20	0202008	3	1.5	1		Ok											
+		fslorient	20	0202009	4	1.5	1		Ok											
+		fslorient	21	0202100	1	1.5	1		Ok											
+		fslorient, used 0202100 anat scan	21	0202101	1	1.5	1		Ok											
+		fslorient	21	0202102	1	1.5	1		Ok											
+		fslorient	21	0202103	2	1.5	1		Ok											
+		fslorient, used 0202100 anat scan	21	0202104	2	1.5	1		Ok						Error: "main_wf.PlotOverlap_EPI2Anat"					
+		fslorient, used 0202100 anat scan	21	0202105	2	1.5	1		Ok						Error: "main_wf.PlotOverlap_EPI2Anat"					
+		fslorient, used 0202100 anat scan	21	0202106	3	1.5	1		Ok						Error: "main_wf.PlotOverlap_EPI2Anat"					
+		fslorient, used 0202100 anat scan	21	0202107	3	1.5	1		Ok											
+		fslorient	21	0202108	3	1.5	1		Ok											
+		fslorient	21	0202109	4	1.5	1		Ok											
+		fslorient	22	0202200	1	1.5	1		Ok											
+		fslorient, used 0202200 anat scan	22	0202201	1	1.5	1		Ok											
+		fslorient	22	0202202	1	1.5	1		Ok											
+		fslorient	22	0202203	2	1.5	1		Ok											
+		fslorient	22	0202204	2	1.5	1		Ok						Error: "main_wf.PlotOverlap_EPI2Anat"					
+		fslorient	22	0202205	2	1.5	1		Ok						Error: "main_wf.PlotOverlap_EPI2Anat"					
+		fslorient	22	0202206	3	1.5	1		Ok						Error: "main_wf.PlotOverlap_EPI2Anat"					
+		fslorient, used 0202200 anat scan	22	0202207	3	1.5	1		Ok											
+		fslorient	22	0202208	3	1.5	1		Ok											
+		fslorient	22	0202209	4	1.5	1		Ok											
+		3dresample, remove 2 first volumes of func scans -> then reproces via rabies 	23	0202300	1	1	1		Ok											
+			23	0202301	1	1	1		Ok											
+			23	0202302	1	1	0													
+			23	0202303	1	1	0													
+			23	0202304	1	1	0													
+			23	0202305	1	1	0													
+			23	0202306	1	1	0													
+			23	0202307	1	1	0													
+			23	0202308	1	1	0													
+			23	0202309	1	1	0													
+yes																				
+yes							0 = default arg													
+yes							1 = already prepro													
+yes							2 = prepro with args													
+yes																				

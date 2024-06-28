@@ -5,9 +5,10 @@
 
 
 # Flip the scans in the x-axis 
-cd /project/4180000.19/multirat_stim/scratch/rabies_test/flip/
+#cd /project/4180000.19/multirat_stim/scratch/rabies_test/flip/
+cd /project/4180000.19/multirat_stim/scratch/flip/
 
-nifti_file="sub-0201202_ses-1_run-1_bold_combined.nii.gz"
+nifti_file="sub-0201003_ses-1_run-1_bold_combined.nii.gz"
 
 fslhd $nifti_file
 
