@@ -18,6 +18,7 @@ exclude	exclude.reason	comments	dataset	rat.sub	rat.ses	func.TR	rabies_prepro	ra
 			2	0200206	1	1.5	1		ok											
 			2	0200207	1	1.5	1		ok											
 			2	0200208	1	1.5	1		ok											
+yes	corrupted data		2	0200209	1	1.5	1		/											
 		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	2	0200300	1	1	1		ok											
 		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	3	0200301	1	1	1		ok											
 		3dresample, remove 5 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies,  flip R/L	3	0200302	1	1	1		ok											
@@ -66,6 +67,8 @@ yes	raw images	3dresample, remove 5 first volumes of func scans. File replaced i
 			7	0200705	1	2	1		ok											
 			7	0200706	1	2	1		ok											
 		flip R/L	7	0200707	1	2	1		ok											
+yes	corrupted data		7	0200708	1	2	1		/											
+yes	corrupted data		7	0200709	1	2	1		/											
 			8	0200800	1	2	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat	miss brain	ok 	miss brain	epi2anat	miss brain + croping	epi2anat	keep preprocess_1	ok			
 			8	0200801	1	2	1		ok											
 			8	0200802	1	2	1		ok											
@@ -75,8 +78,9 @@ yes	raw images	3dresample, remove 5 first volumes of func scans. File replaced i
 		flip R/L	8	0200806	1	2	1		ok											
 			8	0200807	1	2	1		ok											
 			8	0200808	1	2	1		ok											
-			9	0200900	1	1	1		ok											
-			9	0200901	1	1	1		ok											
+yes	corrupted data		8	0200809	1	2	1		/											
+			9	0200900	1	2	1		ok											
+			9	0200901	1	2	1		ok											
 			9	0200902	1	1	1		ok											
 			9	0200903	1	1	1		ok											
 			9	0200904	1	1	1	"--anat_autobox --bold_autobox"	epi2anat	miss brain	ok									
@@ -113,7 +117,8 @@ yes	raw images	3dresample, remove 5 first volumes of func scans. File replaced i
 		manual cropping, 3dresample                 3dresample (-5vo)  	12	0201205	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash	anat inho	crash	not complete	crash	not complete	crash	why ? ask 	more time and memo, repro arg 2. 	crash	manual cropping	
 		3dresample	12	0201206	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --bold2anat_coreg=masking=false,brain_extraction=false,registration=Rigid"	epi2anat		ok									
 		3dresample	12	0201207	1	1	1		ok											
-		3dresample	12	0201208	1	1	1		ok											
+yes	corrupted data	3dresample	12	0201208	1	1	1		ok											
+		3dresample	12	0201209	1	1	1		/											
 		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201300	1	3	1	"--anat_autobox --bold_autobox"	epi2anat + masks		ok									
 		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201301	1	3	1		ok											
 		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201302	1	3	1	"--anat_autobox --bold_autobox"	epi2anat + masks		ok									
@@ -125,7 +130,7 @@ yes	raw images	3dresample, remove 5 first volumes of func scans. File replaced i
 		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201308	1	3	1	"--anat_autobox --bold_autobox"	epi2anat +mask		ok									
 		3dresample, remove 2 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	13	0201309	1	3	1	"--anat_autobox --bold_autobox"	crash	main_wf.bold_main_wf.bold_confs_wf.estimate_confounds"	ok									
 		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201400	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
-yes	raw data, func missing	3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201401	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
+		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201401	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
 		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201402	1	4	1	"--anat_autobox --bold_autobox"	crash		ok									
 		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201403	1	4	1	"--anat_autobox --bold_autobox"			ok									
 		3dresample, remove 1 first volumes of func scans. File replaced in '/bids/' but not 'to_convert' -> then reproces via rabies 	14	0201404	1	4	1	"--anat_autobox --bold_autobox"			ok									
@@ -147,7 +152,7 @@ yes	raw data, func missing	3dresample, remove 1 first volumes of func scans. Fil
 			16	0201600	1	1	1		ok		.									
 			16	0201601	1	1	1	"--anat_autobox --bold_autobox"			ok									
 			16	0201602	1	1	1	"--anat_autobox --bold_autobox"			ok									
-			16	0201603	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash		crash				crash:Error on "main_wf.bold_main_wf.gen_bold_ref.gen_ref"					
+yes	crash RABIES		16	0201603	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"	crash		crash				crash:Error on "main_wf.bold_main_wf.gen_bold_ref.gen_ref"					
 			16	0201604	1	1	1		ok		.									
 			16	0201605	1	1	1		ok		.									
 			16	0201606	1	1	1	"--anat_autobox --bold_autobox --bold_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false --anat_inho_cor=method=N4_reg,otsu_thresh=2,multiotsu=false"			misalignment		Ok							
@@ -214,17 +219,6 @@ yes	missing func image in raw data		19	0201907	1	1.5	1
 		fslorient, used 0202200 anat scan	22	0202207	3	1.5	1		Ok											
 		fslorient	22	0202208	3	1.5	1		Ok											
 		fslorient	22	0202209	4	1.5	1		Ok											
-		3dresample, remove 2 first volumes of func scans -> then reproces via rabies 	23	0202300	1	1	1		Ok											
-			23	0202301	1	1	1		Ok											
-			23	0202302	1	1	0													
-			23	0202303	1	1	0													
-			23	0202304	1	1	0													
-			23	0202305	1	1	0													
-			23	0202306	1	1	0													
-			23	0202307	1	1	0													
-			23	0202308	1	1	0													
-			23	0202309	1	1	0													
-yes																				
 yes							0 = default arg													
 yes							1 = already prepro													
 yes							2 = prepro with args													
