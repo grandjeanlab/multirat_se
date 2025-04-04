@@ -1,0 +1,128 @@
+---
+title: "Overlap 2nd level maps"
+date: 2025-04-02
+author: "Joanes Grandjean"
+format: gfm
+---
+
+This is an added section to address reviewer 2's comment about the overlap of the second level maps. Here, I attempt to show how brain mapping overlaps per sensory region, as a function of the selected HRF. 
+
+step one, import the libraries and define the paths to the data.
+```{python}
+import os
+import pandas as pd
+import numpy as np
+import nibabel as nib
+import matplotlib.pyplot as plt
+from nilearn import plotting, image
+from nilearn.plotting import plot_img
+from nilearn.maskers import NiftiMasker
+
+# --- Data path ---
+metadata_path = '/home/traaffneu/joagra/code/multirat_se/script/table/metadata_stand.tsv'
+df = pd.read_csv(metadata_path, sep='\t')
+df = df.loc[(df['exclude'] != 'yes')]
+
+# --- Paths to the template ---
+template_folder = '/project/4180000.19/multirat_stim/'
+template= nib.load(template_folder+'SIGMA_Wistar_Rat_Brain_TemplatesAndAtlases_Version1.1/SIGMA_Rat_Anatomical_Imaging/SIGMA_Rat_Anatomical_InVivo_Template/SIGMA_InVivo_Brain_Template_Masked.nii')                                                                                                                                                                                        
+atlas_mask = nib.load(template_folder+'SIGMA_Wistar_Rat_Brain_TemplatesAndAtlases_Version1.1/SIGMA_Rat_Anatomical_Imaging/SIGMA_Rat_Anatomical_InVivo_Template/SIGMA_InVivo_Brain_Mask.nii')
+masker = NiftiMasker(mask_img=atlas_mask, standardize=True)
+
+# --- Paths to the data ---
+analysis_folder='/project/4180000.19/multirat_stim/scratch/rabies_test/'
+
+hrfs = ['Two_gammas', 'Peak_span', 'glover', 'spm', 'block']  
+hrf_paths = {'Two_gammas': analysis_folder+'second_level/Two_gammas/z_score/',
+            'Peak_span': analysis_folder+'second_level/Peak_span/z_score/',
+            'glover' : analysis_folder+'second_level/glover/z_score/', 
+            'spm' : analysis_folder+'second_level/spm/z_score/',
+            'block' : analysis_folder+'second_level/block/z_score/'} 
+
+avg_path = analysis_folder+'second_level/overlap/'
+# create the folder if it does not exist
+if not os.path.exists(avg_path):
+    os.makedirs(avg_path)
+
+```
+
+next, we define what datasets we want to group together. Because of the lack of datasets ffor most sensory modalities, we focus on the forepaw
+```{python}
+
+sensoryds = {
+    'forepaw': ['01', '03','04','05', '06', '07', '09', '10flipped', '11','13','18','19'],
+    'hindpaw': ['02', '12'],
+    'whiskers': ['15'],
+    'eyes': ['16', '17', '20','21', '22']
+}
+
+```
+
+first we load the maps in python. We thershold them at z>1.9 which is ~p<0.05 unidirectional, binarize the maps and then we take the mean of the maps.
+```{python}
+
+# --- Load the data ---
+for hrf in hrfs:
+  hrf_path = hrf_paths[hrf]
+# first flip dataset 10
+  ds = '10'
+  map_path = hrf_path + 'z_score_dataset-020' + ds + '.nii.gz'
+# load the image
+  img = nib.load(map_path)
+  data = img.get_fdata()
+  data = np.flip(data, axis=0)
+# save the flipped image
+  img_flipped = nib.Nifti1Image(data, img.affine)
+  nib.save(img_flipped, hrf_path + 'z_score_dataset-020' + ds + 'flipped.nii.gz')
+# --- Load the data ---
+  maps = []
+  for ds in sensoryds['forepaw']:
+    map_path = hrf_path + 'z_score_dataset-020' + ds + '.nii.gz'
+    # add the path to a list 
+    maps.append(map_path)
+# concat the images
+  mapsconcat = image.concat_imgs(maps, auto_resample=True)
+# load the images
+  data = image.load_img(mapsconcat)
+# threshold at 2.3 and binarize
+  data = image.math_img('img >= 1.9', img=data)
+# take the mean of the images
+  data = image.math_img('img.mean(axis=3)', img=data)
+  rs_mask=image.resample_img(atlas_mask, target_affine=data.affine, target_shape=data.shape[0:3], interpolation='nearest') 
+  data = image.math_img('img1 * img2', img1=data, img2=rs_mask)
+# with numpy create an array of 1 with the same shape as the data
+  mask2 = np.ones(data.shape)
+  mask2[:,78:,:] = 0
+  mask2[:, 0:35, :] = 0
+  mask2 = nib.Nifti1Image(mask2, data.affine)
+  data = image.math_img('img1 * img2', img1=data, img2=mask2)
+# save data
+  data_path = avg_path + 'overlap_' + hrf + '_forepaw.nii.gz'
+  nib.save(data, data_path)
+
+```
+
+next we output the images as overlays
+```{python}
+
+overlap_path = os.path.join('/project/4180000.19/multirat_stim/scratch/rabies_test/second_level/overlap/')
+
+for hrf in hrfs:
+  overlapmap = nib.load(os.path.join(overlap_path, 'overlap_' + hrf + '_forepaw.nii.gz'))
+  #overlapmap = masker.fit_transform(overlapmap)        
+#plot the overlap  
+  plot_stat = plotting.plot_stat_map(overlapmap,
+                                     bg_img=template,
+                                     cut_coords=(4, 2, 5),  #forepaw=(4, 2, 5), hind = (3, 0.5, 5), visual(0, -7, 4), whiskers(1, -4, 0)
+                                     threshold=0.25,
+                                     display_mode='ortho',
+                                     cbar_tick_format='%.2g',
+                                     symmetric_cbar=False,
+                                     draw_cross=True,
+                                     vmax=1,
+                                     vmin=-1,
+                                     black_bg=False)
+  plt.savefig(os.path.join(overlap_path,'overlap_' + hrf + '_forepaw.svg'), format='svg', dpi=1200)
+  plt.show()
+
+```
