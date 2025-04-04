@@ -114,7 +114,7 @@ for hrf in hrfs:
   plot_stat = plotting.plot_stat_map(overlapmap,
                                      bg_img=template,
                                      cut_coords=(4, 2, 5),  #forepaw=(4, 2, 5), hind = (3, 0.5, 5), visual(0, -7, 4), whiskers(1, -4, 0)
-                                     threshold=0.25,
+                                     threshold=0.25
                                      display_mode='ortho',
                                      cbar_tick_format='%.2g',
                                      symmetric_cbar=False,
